@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <form id="converter-form">
+            <label for="unit-type">Tipo de Unidad:</label>
+            <select id="unit-type">
+                <option value="length">Longitud</option>
+                <option value="weight">Peso</option>
+                <option value="temperature">Temperatura</option>
+            </select>
+
+            <label for="input-value">Valor:</label>
+            <input type="number" id="input-value" required>
+
+            <label for="from-unit">De:</label>
+            <select id="from-unit"></select>
+
+            <label for="to-unit">A:</label>
+            <select id="to-unit"></select>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
